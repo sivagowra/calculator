@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./style.css">  -->
+    <title>Document</title>
+
+    <style>
+        #countLable{
+    display: block;
+    text-align: center;
+    font-size: 4em;
+    font-family: Helvetica;
+}
+#BtnContainer{
+    text-align: center;
+}
+.buttons{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: aliceblue;
+    background-color:rgb(15, 102, 149);
+    border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+    <label id="countLable">0</label><br>
+
+    <div id="BtnContainer">
+        <button id="decreaseBtn" class="buttons">Decress</button>
+        <button id="resetBtn" class="buttons">Reset</button>
+        <button id="incressBtn" class="buttons">Incress</button>
+    </div>
+    
+    <script>
+        let decreaseBtn=document.getElementById("decreaseBtn");
+        let resetBtn=document.getElementById("resetBtn");
+        let incressBtn=document.getElementById("incressBtn");
+        let countLable=document.getElementById("countLable");
+let count=0;
+
+incressBtn.onclick =function(){
+     count++;
+     countLable.textContent=count;    
+}
+resetBtn.onclick =function(){
+     count=0;
+     countLable.textContent=count;    
+}
+decreaseBtn.onclick =function(){
+     count--;
+     countLable.textContent=count;    
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #continer{
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        }
+        #buttonCon{
+            text-align: center;
+        }
+        .buttons{
+            background-color: rgb(0, 128, 255);
+            font-style: oblique;
+            color:white;
+            border-radius: 10px;
+            padding: 10px 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <label id="continer" >0</label>
+    <div id="buttonCon">
+        <button id="decreaseBtn" class="buttons">Decress</button>
+        <button id="resetBtn" class="buttons">Reset</button>
+        <button id="incressBtn" class="buttons">Incress</button>
+
+    </div>
+<script>
+    let decreaseBtn=document.getElementById("decreaseBtn");
+    let resetBtn=document.getElementById("resetBtn");
+    let incressBtn=document.getElementById("incressBtn");
+   let continer=document.getElementById("continer");
+
+   let count=0;
+
+   incressBtn.onclick =function(){
+     count++;
+     continer.textContent=count;  
+   }
+
+</script>    
+</body>
+</html>

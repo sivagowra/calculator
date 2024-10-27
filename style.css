@@ -1,0 +1,26 @@
+body{
+    font-family:inter;
+    font-size: medium;
+}
+p{
+    color: rgb(209, 24, 24);
+}
+h1{
+    color:rgb(50, 14, 211);
+}
+#countLable{
+    display: block;
+    text-align: center;
+    font-size: 4em;
+    font-family: Helvetica;
+}
+#BtnContainer{
+    text-align: center;
+}
+.buttons{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: aliceblue;
+    background-color:rgb(15, 102, 149);
+    border-radius: 10px;
+}
